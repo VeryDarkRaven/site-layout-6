@@ -76,6 +76,19 @@ h1, h2, h3, h4, h5, h6 {
 body {
   height: 100%;
   font-family: "Lato", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #565656 #000;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body::-webkit-scrollbar-track {
+  background: #000;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #565656;
+  border-radius: 10px;
+  border: 3px solid #000;
 }
 
 body.lock {
@@ -143,11 +156,15 @@ header.container {
   .container {
     width: 80%;
   }
+  .title {
+    font-size: 30px;
+  }
 }
 /* Header style */
 .header {
   position: fixed;
   top: 0;
+  z-index: 10;
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   color: #fff;
@@ -262,7 +279,7 @@ header.container {
   display: block;
   opacity: 0;
   position: relative;
-  width: 18px;
+  width: 18.5px;
   height: 15px;
   cursor: pointer;
   pointer-events: none;
@@ -309,11 +326,10 @@ header.container {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 1px;
-  transition: color 1s ease 0s, text-shadow 1s ease 0s;
+  transition: color 1s ease 0s, text-shadow 1s ease 0s, opacity 1s ease 0s, width 1s ease 0s, visibility 1s ease 0s;
   display: inline-block;
   width: 100%;
   opacity: 1;
-  transition: opacity 1s ease 0s, width 1s ease 0s, visibility 1s ease 0s;
 }
 .header__nav a:hover {
   color: #ffc568;
@@ -367,7 +383,7 @@ header.container {
     right: 0;
     top: 50%;
     transform: translate(0, -50%);
-    width: 20px;
+    width: 22px;
     height: 15px;
   }
   .header__burger::before, .header__burger::after {
@@ -462,12 +478,13 @@ header.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 .front .container {
   padding: 100px 0 50px;
 }
 
-.front__bg {
+.bg {
   width: 100%;
   min-height: inherit;
   height: 100%;
@@ -477,7 +494,7 @@ header.container {
   z-index: -1;
   background-color: #fff;
 }
-.front__bg .bg__filter {
+.bg .bg__filter {
   position: absolute;
   top: 0;
   left: 0;
@@ -486,7 +503,7 @@ header.container {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
-.front__bg .bg__image img {
+.bg .bg__image img {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -530,9 +547,6 @@ header.container {
   }
 }
 @media (max-width: 480px) {
-  .banner__text .title {
-    font-size: 30px;
-  }
   .banner__text .description {
     font-size: 12px;
   }
@@ -543,7 +557,8 @@ header.container {
   min-height: 100vh;
 }
 
-.about__wrapper {
+.about__wrapper,
+.services__wrapper {
   display: grid;
   grid-template-columns: 45% auto;
   grid-template-rows: 1fr;
@@ -553,7 +568,7 @@ header.container {
 .text-container_side {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -640,5 +655,89 @@ header.container {
     padding: 30px;
     justify-content: center;
   }
+  .about__text-container_side .title {
+    text-align: center;
+  }
 }
 /* End about style */
+/* Services style */
+.services {
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.services__items {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-auto-rows: auto;
+  gap: 50px;
+}
+.services__items .item {
+  display: grid;
+  grid-template-columns: 100px 1.5fr;
+  grid-template-rows: minmax(70px, 1fr);
+  gap: 30px;
+}
+.services__items .item__icon {
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+}
+.services__items .item__icon svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  min-height: 70px;
+  max-height: inherit;
+  object-fit: contain;
+  fill: #fba419;
+}
+.services__items .item__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.services__items .item__header > h3 {
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.services__items .item__description {
+  color: #cfd0d1;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+@media (max-width: 860px) {
+  .services__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .services__text-container_side .title {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .services__items {
+    gap: 70px;
+  }
+  .services__items .item {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto;
+  }
+  .services__items .item__header {
+    text-align: center;
+  }
+}
+/* End services style */
