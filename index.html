@@ -7,9 +7,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap&_v=20230228163003" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.min.css?_v=20230228163003">
+  <link rel="stylesheet" href="css/style.min.css">
   
   <title>site layout 6</title>
 </head>
@@ -53,13 +53,13 @@
         <div class="search__cross"></div>
         <input type="text" placeholder="SEARCH" class="search__input">
         <div class="search__image-container">
-          <picture><source srcset="img/header/1.webp" type="image/webp"><img src="img/header/1.png" alt="search" class="search__image"></picture>
+          <img src="img/header/1.png" alt="search" class="search__image">
         </div>
       </div>
 
       <div class="header__social">
         <a href="#">
-          <picture><source srcset="img/header/2.webp" type="image/webp"><img src="img/header/2.png" alt="facebook"></picture>
+          <img src="img/header/2.png" alt="facebook">
         </a>
       </div>
     </div>
@@ -69,7 +69,7 @@
   <div class="front__bg bg">
     <div class="bg__filter"></div>
     <div class="bg__image">
-      <picture><source srcset="img/front/1.webp" type="image/webp"><img src="img/front/1.png" alt=""></picture>
+      <img src="img/front/1.png" alt="">
     </div>
   </div>
 
@@ -88,7 +88,7 @@
 </section>
 <section class="about">
   <div class="container container_column-center">
-    <div class="about__wrapper">
+    <div class="about__wrapper grid-wrapper">
       <div class="about__text-container_side text-container_side">
         <h2 class="title">Welcome <span class="yellow-text">for Professionals</span></h2>
 
@@ -111,7 +111,7 @@
         <div class="about__image-container">
           <div class="about__image-filter"></div>
           <div class="about__image">
-            <picture><source srcset="img/about/1.webp" type="image/webp"><img src="img/about/1.png" alt="about-img"></picture>
+            <img src="img/about/1.png" alt="about-img">
           </div>
           <div class="about__image-text">
             <p>Lorem ipsum dolor sit ametelit, sed do eiusmod temporesse.</p>
@@ -125,12 +125,12 @@
   <div class="services__bg bg">
     <div class="bg__filter"></div>
     <div class="bg__image">
-      <picture><source srcset="img/services/1.webp" type="image/webp"><img src="img/services/1.png" alt="bg"></picture>
+      <img src="img/services/1.png" alt="bg">
     </div>
   </div>
 
   <div class="container container_column-center">
-    <div class="services__wrapper">
+    <div class="services__wrapper grid-wrapper">
       <div class="services__text-container_side text-container_side">
         <h2 class="title">Our Company <br><span class="yellow-text">great Services.</span></h2>
      
@@ -215,8 +215,104 @@
     </div>
   </div>
 </section>
+<section class="feature">
+  <div class="container container_column-center">
+    <div class="feature__wrapper grid-wrapper">
+      <div class="feature__items-container_side items-container_side">
+        <div class="feature__cards">
+          <div class="card">
+            <div class="card__hover">
+              <div class="hover__container">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#feature--click-cursor"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="card__content">
+              <div class="card__icon">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#services--1"></use>
+                </svg>
+              </div>
+
+              <div class="card__title"><p>Creative</p></div>
+
+              <div class="card__description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p></div>
+
+              <div class="card__button">
+                <a href="#" class="button">Read more</a>
+              </div>
+            </div>
+
+            <div class="card__bg bg">
+              <div class="bg__filter"></div>
+
+              <div class="bg__image">
+                <img src="img/feature/1.png" alt="1">
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__hover">
+              <div class="hover__container">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#feature--click-cursor"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="card__content">
+              <div class="card__icon">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#services--4"></use>
+                </svg>
+              </div>
+
+              <div class="card__title"><p>Creative</p></div>
+
+              <div class="card__description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p></div>
+
+              <div class="card__button">
+                <a href="#" class="button">Read more</a>
+              </div>
+            </div>
+
+            <div class="card__bg bg">
+              <div class="bg__filter"></div>
+
+              <div class="bg__image">
+                <img src="img/feature/2.png" alt="1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="feature__text-container_side text-container_side">
+        <h2 class="title">Welcome <span class="yellow-text">for Professionals</span></h2>
+  
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempoaresse cillum dolore eu fugiat nulla eu fugiat nulla pariatur. Lorem ipsum dolor sit amet cillum dolore eu fugiat nulla eu fugiat nulla pariatur.</p>
+  
+        <ul class="feature__list">
+          <li>
+            <span class="list__marker">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#feature--check"></use>
+              </svg>
+            </span>Lorem ipsum dolor sitconsectetur adipiscing</li>
+          <li>Lorem ipsum dolor sit ametadiplscing</li>
+          <li>Lorem dolor sit amet, consectetur adipiscing</li>
+          <li>Ipsum dolor sit amet, consectetur adipiscing</li>
+          <li>Lorem ipsum dolor sitconsectetur adipiscing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
   <footer></footer>
 
-  <script src="js/app.min.js?_v=20230228163003"></script>
+  <script src="js/app.min.js"></script>
 </body>
 </html>
