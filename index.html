@@ -7,9 +7,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap&_v=20230306164638" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230306164638">
   
   <title>site layout 6</title>
 </head>
@@ -53,23 +53,24 @@
         <div class="search__cross"></div>
         <input type="text" placeholder="SEARCH" class="search__input">
         <div class="search__image-container">
-          <img src="img/header/1.png" alt="search" class="search__image">
+          <picture><source srcset="img/header/1.webp" type="image/webp"><img src="img/header/1.png" alt="search" class="search__image"></picture>
         </div>
       </div>
 
       <div class="header__social">
         <a href="#">
-          <img src="img/header/2.png" alt="facebook">
+          <picture><source srcset="img/header/2.webp" type="image/webp"><img src="img/header/2.png" alt="facebook"></picture>
         </a>
       </div>
     </div>
   </div>
 </header>
+  <main>
   <section class="front">
   <div class="front__bg bg">
     <div class="bg__filter"></div>
     <div class="bg__image">
-      <img src="img/front/1.png" alt="">
+      <picture><source srcset="img/front/1.webp" type="image/webp"><img src="img/front/1.png" alt=""></picture>
     </div>
   </div>
 
@@ -86,7 +87,7 @@
     </div>
   </div>
 </section>
-<section class="about">
+  <section class="about">
   <div class="container container_column-center">
     <div class="about__wrapper grid-wrapper">
       <div class="about__text-container_side text-container_side">
@@ -111,7 +112,7 @@
         <div class="about__image-container">
           <div class="about__image-filter"></div>
           <div class="about__image">
-            <img src="img/about/1.png" alt="about-img">
+            <picture><source srcset="img/about/1.webp" type="image/webp"><img src="img/about/1.png" alt="about-img"></picture>
           </div>
           <div class="about__image-text">
             <p>Lorem ipsum dolor sit ametelit, sed do eiusmod temporesse.</p>
@@ -121,11 +122,11 @@
     </div>
   </div>
 </section>
-<section class="services">
+  <section class="services">
   <div class="services__bg bg">
     <div class="bg__filter"></div>
     <div class="bg__image">
-      <img src="img/services/1.png" alt="bg">
+      <picture><source srcset="img/services/1.webp" type="image/webp"><img src="img/services/1.png" alt="bg"></picture>
     </div>
   </div>
 
@@ -215,7 +216,7 @@
     </div>
   </div>
 </section>
-<section class="feature">
+  <section class="feature">
   <div class="container container_column-center">
     <div class="feature__wrapper grid-wrapper">
       <div class="feature__items-container_side items-container_side">
@@ -249,7 +250,7 @@
               <div class="bg__filter"></div>
 
               <div class="bg__image">
-                <img src="img/feature/1.png" alt="1">
+                <picture><source srcset="img/feature/1.webp" type="image/webp"><img src="img/feature/1.png" alt="1"></picture>
               </div>
             </div>
           </div>
@@ -283,7 +284,7 @@
               <div class="bg__filter"></div>
 
               <div class="bg__image">
-                <img src="img/feature/2.png" alt="1">
+                <picture><source srcset="img/feature/2.webp" type="image/webp"><img src="img/feature/2.png" alt="1"></picture>
               </div>
             </div>
           </div>
@@ -311,8 +312,133 @@
     </div>
   </div>
 </section>
+  <section class="team">
+  <div class="team__bg bg">
+    <div class="bg__filter"></div>
+    <div class="bg__image">
+      <picture><source srcset="img/team/5.webp" type="image/webp"><img src="img/team/5.png" alt="bg"></picture>
+    </div>
+  </div>
+
+  <div class="container container_column-center">
+    <h2 class="title">Business <span class="yellow-text">Team</span></h2>
+  
+    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporesse cillum dolore eu fugiat nulla eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmad temparesse cillum dolore eu fugiat nulla eu fugiat nulla pariatur.</p>
+
+    <div class="team__images">
+      <div class="images-container">
+        <div class="images__block">
+          <picture><source srcset="img/team/1.webp" type="image/webp"><img src="img/team/1.png" alt="1"></picture>
+        </div>
+
+        <div class="images__block">
+          <picture><source srcset="img/team/2.webp" type="image/webp"><img src="img/team/2.png" alt="2"></picture>
+        </div>
+
+        <div class="images__block">
+          <picture><source srcset="img/team/3.webp" type="image/webp"><img src="img/team/3.png" alt="3"></picture>
+        </div>
+
+        <div class="images__block">
+          <picture><source srcset="img/team/4.webp" type="image/webp"><img src="img/team/4.png" alt="4"></picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="portfolio">
+  <div class="container container_column-center">
+    <div class="portfolio__wrapper">
+      <div class="portfolio__images portfolio__image_1-container">
+        <a href="#">
+          <picture><source srcset="img/portfolio/1.webp" type="image/webp"><img src="img/portfolio/1.png" alt="1"></picture>
+        </a>
+      </div>
+  
+      <div class="portfolio__images portfolio__image_2-container">
+        <a href="#">
+          <picture><source srcset="img/portfolio/2.webp" type="image/webp"><img src="img/portfolio/2.png" alt="2"></picture>
+        </a>
+      </div>
+  
+      <div class="portfolio__images portfolio__image_3-container">
+        <a href="#">
+          <picture><source srcset="img/portfolio/3.webp" type="image/webp"><img src="img/portfolio/3.png" alt="3"></picture>
+        </a>
+      </div>
+  
+      <div class="portfolio__title-container">
+        <h2 class="title">We have <span class="yellow-text">Served</span></h2>
+      </div>
+  
+      <div class="portfolio__description-container">
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporesse cillum dolore eu fugiat nulla eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporesse cillum dolore eu fugiat nulla eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporesse cillum dolore eu fugiat nulla eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporesse cillum dolore eu fugiat nulla eu fugiat nulla pariatur.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="studies">
+  <div class="container container_column-center">
+    <h2 class="title">Case <span class="yellow-text">studies</span></h2>
+    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e.iusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+
+    <div class="studies__slider">
+      
+    </div>
+  </div>
+</section>
+  <section class="testimonials">
+  <div class="container container_column-center">
+    <div class="testimonials__wrapper">
+      <div class="testimonials__title-container">
+        <h2 class="title">Client <span class="yellow-text">testimonials</span></h2>
+      </div>
+
+      <div class="testimonials__block testimonials__block_1">
+        <div class="testimonials__image">
+          <picture><source srcset="img/testimonials/2.webp" type="image/webp"><img src="img/testimonials/2.png" alt="2"></picture>
+        </div>
+
+        <div class="testimonials__text">
+          <div class="quotes">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#quotes-left"></use>
+            </svg>
+          </div>
+
+          <div class="text">
+            <p>Lorem ipsum dolar sit amet, consectetur adipiscing clit, sed da civsmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+
+            <p class="name">John Doe, CEO</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials__block testimonials__block_2">
+        <div class="testimonials__image">
+          <picture><source srcset="img/testimonials/1.webp" type="image/webp"><img src="img/testimonials/1.png" alt="1"></picture>
+        </div>
+
+        <div class="testimonials__text">
+          <div class="quotes">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#quotes-left"></use>
+            </svg>
+          </div>
+
+          <div class="text">
+            <p>Lorem ipsum dolar sit amet, consectetur adipiscing clit, sed da civsmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+
+            <p class="name">John Doe, CEO</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
   <footer></footer>
 
-  <script src="js/app.min.js"></script>
+  <script src="js/app.min.js?_v=20230306164638"></script>
 </body>
 </html>
