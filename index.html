@@ -7,9 +7,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap&_v=20230306164638" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap&_v=20230307170109" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.min.css?_v=20230306164638">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230307170109">
   
   <title>site layout 6</title>
 </head>
@@ -378,12 +378,96 @@
   </div>
 </section>
   <section class="studies">
-  <div class="container container_column-center">
-    <h2 class="title">Case <span class="yellow-text">studies</span></h2>
-    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e.iusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-
+  <div class="container_column-center">
+    <div class="container">
+      <h2 class="title">Case <span class="yellow-text">studies</span></h2>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e.iusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+  
     <div class="studies__slider">
-      
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide__bg bg">
+              <div class="bg__filter"></div>
+
+              <div class="bg__image">
+                <picture><source srcset="img/studies/1.webp" type="image/webp"><img src="img/studies/1.png" alt="1"></picture>
+              </div>
+            </div>
+
+            <div class="slide__content">
+              <h3 class="yellow-text slide__title">Lorem ipsum dolor</h3>
+
+              <p class="slide__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e.iusmod tempor incididunt ut labore et dolore magna</p>
+
+              <div class="slide__button">
+                <a href="#" class="button">Read more</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="slide__bg bg">
+              <div class="bg__filter"></div>
+
+              <div class="bg__image">
+                <picture><source srcset="img/studies/2.webp" type="image/webp"><img src="img/studies/2.png" alt="2"></picture>
+              </div>
+            </div>
+
+            <div class="slide__content">
+              <h3 class="yellow-text slide__title">Lorem ipsum dolor</h3>
+
+              <p class="slide__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e.iusmod tempor incididunt ut labore et dolore magna</p>
+
+              <div class="slide__button">
+                <a href="#" class="button">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide__bg bg">
+              <div class="bg__filter"></div>
+
+              <div class="bg__image">
+                <picture><source srcset="img/studies/3.webp" type="image/webp"><img src="img/studies/3.png" alt="3"></picture>
+              </div>
+            </div>
+
+            <div class="slide__content">
+              <h3 class="yellow-text slide__title">Lorem ipsum dolor</h3>
+
+              <p class="slide__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e.iusmod tempor incididunt ut labore et dolore magna</p>
+
+              <div class="slide__button">
+                <a href="#" class="button">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide__bg bg">
+              <div class="bg__filter"></div>
+
+              <div class="bg__image">
+                <picture><source srcset="img/studies/4.webp" type="image/webp"><img src="img/studies/4.jpg" alt="4"></picture>
+              </div>
+            </div>
+
+            <div class="slide__content">
+              <h3 class="yellow-text slide__title">Nikita Litvinkov</h3>
+
+              <p class="slide__description">Тут был хороший борщ с капустой, но не красной. Сосисочки. Ещё есть какой-то непонятный салат, куда крошат морковку, капусту и яблоки с ананасами. Вообще он меня бесит. Вот. Ещё чего. Вкусный чай. Он так утоляет жажду.Я чувствую себя человеком! Я - Никита Литвинков!</p>
+
+              <div class="slide__button">
+                <a href="#" class="button">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -436,9 +520,52 @@
     </div>
   </div>
 </section>
+  <section class="contact">
+  <div class="contact__bg">
+    <div class="contact__bg_left">
+      <div class="bg">
+        <div class="bg__filter"></div>
+  
+        <div class="bg__image">
+          <picture><source srcset="img/contact/1.webp" type="image/webp"><img src="img/contact/1.png" alt="1"></picture>
+        </div>
+      </div>
+    </div>
+  
+    <div class="contact__bg_right"></div>
+  </div>
+
+  <div class="container container_column-center">
+    <div class="contact__wrapper grid-wrapper">
+      <div class="contact__text-container_side text-container_side">
+        <h2 class="title">Get <br><span class="yellow-text">in Touch</span></h2>
+
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporesse cillum dolore eu fugiat.</p>
+      </div>
+
+      <div class="contact__items-container_side items-container_side">
+        <div class="header__logo-container">
+          <a href="#">
+            <p class="logo">
+              <span class="quotes">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#quotes-right"></use>
+                </svg>
+              </span> 
+    
+              Agency
+            </p>
+          </a>
+    
+          <div class="header__burger"><span></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
   <footer></footer>
 
-  <script src="js/app.min.js?_v=20230306164638"></script>
+  <script src="js/app.min.js?_v=20230307170109"></script>
 </body>
 </html>
