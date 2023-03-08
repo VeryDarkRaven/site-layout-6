@@ -1395,7 +1395,7 @@ header.container {
 /* Contact style */
 
 .contact {
-  min-height: 100vh;
+  min-height: 95vh;
   position: relative;
 }
 
@@ -1428,6 +1428,7 @@ header.container {
 .contact__bg_left,
 .contact__bg_right {
   width: 50%;
+  height: 100%;
   min-height: inherit;
 }
 
@@ -1435,6 +1436,7 @@ header.container {
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 120px;
+  position: relative;
 }
 
 .contact__text-container_side {
@@ -1445,6 +1447,20 @@ header.container {
   font-weight: 500;
   line-height: 1.3;
   font-size: 16px;
+}
+
+.contact__items-container_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
 }
 
 .contact__items-container_side .header__logo-container {
@@ -1460,7 +1476,131 @@ header.container {
   color: #000;
 }
 
+.contact__datas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  margin: 45px 0;
+}
+
+.contact__data {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 1.5fr;
+  grid-template-columns: 100px 1.5fr;
+  -ms-grid-rows: minmax(70px, 1fr);
+  grid-template-rows: minmax(70px, 1fr);
+  gap: 30px;
+}
+
+.contact__data .data__icon {
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+}
+
+.contact__data .data__icon svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  min-height: 70px;
+  max-height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
+  fill: #fba419;
+}
+
+.contact__data .data__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.contact__data .headline {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.contact__data a {
+  color: #000;
+}
+
+.contact__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.contact__social .item a {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  max-height: 100%;
+}
+
+.contact__social .item svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  min-height: 20px;
+  max-height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
+  fill: #000;
+}
+
 /* End contact style */
+
+/* Footer style */
+
+.footer {
+  background-color: #000;
+}
+
+.footer .container {
+  padding: 30px 0;
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
+}
+
+/* End footer style */
 
 @media (min-width: 800px) {
   .header__nav.header__nav_search-active .nav__list a {
@@ -1563,6 +1703,42 @@ header.container {
 
   .feature__cards {
     justify-items: center;
+  }
+}
+
+@media (max-width: 880px) {
+  .contact__wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .contact__bg_left,
+  .contact__bg_right {
+    width: 100%;
+  }
+
+  .contact__bg_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+  }
+
+  .contact__bg_left .bg {
+    height: auto;
+    z-index: 0;
+  }
+
+  .contact__bg_right {
+    height: 100%;
+  }
+
+  .contact__text-container_side .title,
+  .contact__text-container_side .description {
+    text-align: center;
   }
 }
 
@@ -1904,5 +2080,12 @@ header.container {
 
   .services__items .item__header {
     text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact__data {
+    -ms-grid-columns: 60px 1.5fr;
+    grid-template-columns: 60px 1.5fr;
   }
 }
